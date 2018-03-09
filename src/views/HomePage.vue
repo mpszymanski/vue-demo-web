@@ -67,7 +67,7 @@
         </header>
         <!-- FORM -->
         <form-input
-          name="zip"
+          name="shop_zip"
           label="Shop Zip Code*"
           placeholder="653 213"
           pattern="^[0-9]{3}[ ]?[0-9]{3}$"
@@ -81,7 +81,7 @@
           :required="true"
         ></form-input>
         <form-input-image
-          name="receipt"
+          name="image"
           label="Your Receipt Xerocopy*"
           :required="true"
           :max-size="10"

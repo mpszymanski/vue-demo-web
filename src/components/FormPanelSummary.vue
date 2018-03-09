@@ -6,7 +6,7 @@
   <div class="summary" id="error" v-show="status === -1">
     <slot name="messageError"></slot>
     <ul class="has-text-left has-text-danger">
-      <li v-for="error in errors" :key="error">{{ error }}</li>
+      <li v-for="(error, key) in errors" :key="key">{{ error[0] }}</li>
     </ul>
   </div>
 </div>
@@ -18,7 +18,7 @@ export default {
   data () {
     return {
       status: 0,
-      errors: []
+      errors: ['Server did not respond']
     }
   }
 }

@@ -137,7 +137,7 @@ export default {
         return step.inputs.forEach(input => {
           input.wasUsed = false
           if (input.file === undefined || input.file === null) {
-            input.value = null
+            input.value = ''
           } else {
             input.file = null
           }
@@ -165,13 +165,14 @@ export default {
         })
       })
 
-      axios.post('api/create', data)
+      axios.post(process.env.API_ROOT + 'create', data)
         .then(response => {
           this.summary.status = 1
           this.currentStep = -1
           this.updateSteps()
         }).catch(error => {
-          this.summary.errors = error.data
+          console.log(error.response)
+          this.summary.errors = error.response.data.errors
           this.summary.status = -1
           this.currentStep = -1
           this.updateSteps()
