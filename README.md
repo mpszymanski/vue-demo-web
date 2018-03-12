@@ -2,7 +2,7 @@
 Vue js Demonstration project.
 Check out how to write simple, multicomponent app with Vue.js and axios!
 
-This application collaborates with vue-demo-web-api. 
+This application collaborates with vue-demo-api. 
 
 ## Build Setup
 
