@@ -7,6 +7,7 @@
         :name="name"
         :id="name"
         :placeholder="placeholder"
+        :maxlength="maxlength"
         :class="wasUsed ? (isValid ? 'is-success' : 'is-danger') : ''"
         class="input is-medium"
         v-model="value"
@@ -55,6 +56,10 @@ export default {
     pattern: {
       required: false,
       default: '.*'
+    },
+    maxlength: {
+      required: false,
+      default: 255
     }
   },
   data () {

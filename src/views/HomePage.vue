@@ -31,6 +31,7 @@
               label="First Name*"
               placeholder="Joe"
               :required="true"
+              :maxlength="50"
             ></form-input>
           </div>
           <div class="column">
@@ -39,6 +40,7 @@
               label="Last Name*"
               placeholder="Smith"
               :required="true"
+              :maxlength="50"
             ></form-input>
           </div>
         </div>
@@ -48,12 +50,14 @@
           placeholder="joe.smith@example.com"
           pattern="^[a-zA-Z0-9.]*@[a-zA-Z0-9]*\.[a-z]{2,4}$"
           :required="true"
+          :maxlength="255"
         ></form-input>
         <form-input
           name="phone"
           label="Phone"
           placeholder="+22 123 456 789"
           pattern="^[ +0-9]*$"
+          :maxlength="20"
         ></form-input>
         <!-- END FORM -->
       </form-step>
@@ -72,6 +76,7 @@
           placeholder="653 213"
           pattern="^[0-9]{3}[ ]?[0-9]{3}$"
           :required="true"
+          :maxlength="7"
         ></form-input>
         <form-input
           name="code"
@@ -79,6 +84,7 @@
           placeholder="123456789"
           pattern="^[0-9]*$"
           :required="true"
+          :maxlength="12"
         ></form-input>
         <form-input-image
           name="image"
