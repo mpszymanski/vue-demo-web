@@ -73,7 +73,7 @@ describe ('HomePage.vue', () => {
 
 		helpers.click(wrapper, 'button.next');
 
-		helpers.type(wrapper, 'input#zip', '123 15A');
+		helpers.type(wrapper, 'input#shop_zip', '123 15A');
 		
 		helpers.click(wrapper, 'button.submit');
 
@@ -91,7 +91,7 @@ describe ('HomePage.vue', () => {
 
 		helpers.click(wrapper, 'button.next');
 
-		helpers.type(wrapper, 'input#zip', '123 155');
+		helpers.type(wrapper, 'input#shop_zip', '123 155');
 		helpers.type(wrapper, 'input#code', '123456');
 
 		let form = wrapper.vm.$children[0];

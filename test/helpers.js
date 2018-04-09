@@ -7,8 +7,11 @@ let helpers = {
 	},
 	type(wrapper, element, text) {
 		let ob = wrapper.find(element)
-		ob.element.value = text
-		ob.trigger('input')
+		if (ob.element !== undefined) {
+			ob.element.value = text
+			ob.trigger('input')
+		}
+		
 	},
 	mockFile() {
 		var blob = new Blob([""], { type: 'image/jpeg' });
