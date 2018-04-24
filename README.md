@@ -1,6 +1,6 @@
 # vue-demo-web
-Vue js Demonstration project.
-Check out how to write simple, multicomponent app with Vue.js and axios!
+Vue.js demonstration project. 
+This is an example how to write simple, multicomponent applications with Vue.js and axios.
 
 This application collaborates with vue-demo-api. 
 
